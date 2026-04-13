@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="carplay" class="hidden">
+        <h1>CarPlay OS</h1>
+
+        <input id="musicUrl" type="text" placeholder="YouTube / MP3 link...">
+
+        <button onclick="playMusic()">Lejátszás</button>
+
+        <div class="sliderBox">
+            <input id="volume" type="range" min="0" max="100" value="50" oninput="setVolume(this.value)">
+        </div>
+
+        <button onclick="closeCarPlay()">Bezárás</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
